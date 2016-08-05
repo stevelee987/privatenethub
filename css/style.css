@@ -1,0 +1,24 @@
+html,body{
+	height: 100%;
+}
+td{
+	text-align: center;
+	vertical-align: middle;
+	font-size: 300%;
+}
+td:hover{
+	background-color: #aaa;
+}
+table{
+	height: 100%;
+}
+
+.icon{
+	font-size: 200%;
+}
+#title{
+	height: 10%;
+}
+#title-text{
+	font-size: 600%;
+}
