@@ -28,7 +28,7 @@
 	</div>
 
 
-    <table class='table'>
+    <table class='table' id='screen1'>
     	<tr>
     		<td onclick='window.location="http://192.168.1.254"'><span class='bigicon glyphicon glyphicon-home'></span><br/> BT Home Hub 5 - (Landing)</td>
     	
@@ -42,8 +42,38 @@
     	<tr>
     		<td onclick='window.location="http://192.168.1.64"'><span class='bigicon glyphicon glyphicon-lock'></span><br/>CCTV</td>
 
-    		<td onclick='window.location="http://weather.stevelee987.co.uk"'><span class='bigicon glyphicon glyphicon-cloud'></span><br/>Weather</td>
+            <td onclick="SonyPowerOff();"><span class='bigicon glyphicon glyphicon-menu-right'></span><br/>Turn TV Off</td>
+    		<!--td onclick="$('table#screen1').hide(); $('table#screen2').show();"><span class='bigicon glyphicon glyphicon-menu-right'></span><br/>Matrix</td-->
     	</tr>
+
+    </table>
+
+    <table class='table' id='screen2' style='visibility: none;'>
+        <form>
+            <tr>
+                <td></span><br/><input type='radio' name='input'> Sky Q Mini</input></td>
+            
+                <td></span><br/><input type='checkbox' name='output'> Lounge</input></td>
+            </tr>
+            <tr>
+                <td><br/><input type='radio' name='input'> Atlona Matrix</input></td>
+     
+                <td><br/><input type='checkbox' name='output'> Conservatory</input></td>
+            </tr>
+            <tr>
+                <td><br/><input type='radio' name='input'> Blu-Ray Player</input></td>
+
+                <td><br/><input type='checkbox' name='output'> Bedroom</input></td>
+            </tr>
+            <tr>
+                <td><br/><input type='radio' name='input'> Spare</input></td>
+
+                <td><br/><input type='checkbox' name='output'> Atlona Matrix</input></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input id='route' class='btn btn-success' style="float:right" type='button' value="Route"></input></td>
+            </tr>
+        </form>
 
     </table>
 
@@ -64,5 +94,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/matrix.js"></script>
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/sonypoweroff.js"></script>
+    
   </body>
 </html>
